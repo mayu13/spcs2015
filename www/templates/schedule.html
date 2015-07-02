@@ -1,0 +1,118 @@
+<ion-view title="Program Guide">
+<ion-content class="padding">
+	<div class="card">
+	<div class="item item-text-wrap history_color">
+	<center><font color="#000" size=2><b><p>No convention would be complete without great entertainment or motivational and inspiration speakers.  We are excited to announce that the we have confirm with some of the famous entertainment group from India to come over and add their colors to 7th SPCS International Convention.
+	</p></font></center>
+	</div></div>
+	<div class="row">
+		<div class="col col-33"><img class="about_img" src="img/p_sch_1.jpg"></div>
+		<div class="col col-33"><img class="about_img" src="img/p_sch_2.png"></div>
+		<div class="col col-33"><img class="about_img" src="img/p_sch_3.jpg"></div>
+	</div>
+	
+	
+	
+	<center><a href="#" class="item" onclick="window.open('https://drive.google.com/a/techroversolutions.com/file/d/0B4UeRCeNYo5MZklGOEZYMGVaSFk/view', '_blank');"><font size=2><b>Click Here For Schedule Details</font></b></a></center>
+	
+	
+	
+	<h4><b><center>Program Schedule :</center></b></h4>	
+		<div class="card"  ng-controller="SchCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Thrusday, 2 July 2015</font></b></center>
+			</div>
+			<div class="row b_color">			
+				<table>
+					<tbody>				
+						<tr>
+							<td><font color="red" size=1>Event Name</font></td>
+							<td><font color="red" size=1>Time</font></td>
+							<td><font color="red" size=1>Location</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="advisory"><font color="#0095bd" size=1><b>{{ x.Name }}</b></font></td>
+							<td class="advisory"><font size=1><b>{{ x.Time }}<b></font></td>
+							<td class="advisory"><font color="#0095bd" size=1><b>{{ x.Location }}</b></font></td>
+						</tr>
+					</tbody>
+				</table>			
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="SchhCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Friday, 3 July 2015</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>				
+						<tr>
+							<td><font color="red" size=1>Event Name</font></td>
+							<td><font color="red" size=1>Time</font></td>
+							<td><font color="red" size=1>Location</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="advisory"><font color="#0095bd" size=1><b>{{ x.Name }}</b></font></td>
+							<td class="advisory"><font size=1><b>{{ x.Time }}</b></font></td>
+							<td class="advisory"><font color="#0095bd" size=1><b>{{ x.Location }}</b></font></td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="SchhhCtrl">
+			<div class="item item-text-wrap mayu">
+			 <center><b><font color="red" size=2>Saturday, 4 July 2015</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>	
+					<tbody>	
+						<tr>
+							<td><font color="red" size=1>Event Name</font></td>
+							<td><font color="red" size=1>Time</font></td>
+							<td><font color="red" size=1>Location</font></td>
+						</tr>					
+						<tr ng-repeat="x in names">
+							<td class="advisory"><font color="#0095bd" size=1><b>{{ x.Name }}</b></font></td>
+							<td class="advisory"><font size=1><b>{{ x.Time }}<b></font></td>
+							<td class="advisory"><font color="#0095bd" size=1><b>{{ x.Location }}</b></font></td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		
+		
+		<div class="card"  ng-controller="SchlastCtrl">
+			<div class="item item-text-wrap mayu">
+			 <center><b><font color="red" size=2>Sunday, 5 July 2015</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>	
+					<tbody>	
+						<tr>
+							<td><font color="red" size=1>Event Name</font></td>
+							<td><font color="red" size=1>Time</font></td>
+							<td><font color="red" size=1>Location</font></td>
+						</tr>					
+						<tr ng-repeat="x in names">
+							<td class="advisory"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td class="advisory"><font size=1><b>{{ x.Time }}</b></font></td>
+							<td class="advisory"><font color="#0095bd" size=1><b> {{ x.Location }}</b></font></td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+	</ion-content>
+</ion-view>

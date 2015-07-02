@@ -1,0 +1,546 @@
+<ion-view title="Volunteer Name">
+<ion-content class="padding">
+     <div ng-app="myApp">
+	
+
+	
+	
+	<div class="card"  ng-controller="DecoCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Decoration & Stage</font></b></center>
+			</div>
+			<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Rita Sutaria : &nbsp  <a ng-href="tel: 9728143618 ">972-814-3618</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Ramesh Kakadia: &nbsp  <a ng-href="tel: 4092210408 ">409-221-0408</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Chetan Savalia: &nbsp  <a ng-href="tel: 2146738986 ">214-673-8986</a></b></font></font></center>
+			<div class="row b_color">					
+				<table align="center">		
+					<tbody>	
+						<tr>						
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>				
+				</table>			
+			</div>			
+	</div>
+		
+		
+		<div class="card"  ng-controller="DirCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Directory & Souvenir</font></b></center>
+			</div>
+			
+			<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Dilip Suhagia : &nbsp  <a ng-href="tel: 469-531-0480 ">469-531-0480</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Sudhir Sakaria: &nbsp  <a ng-href="tel: 214-727-6181 ">214-727-6181</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Bharat Sutariya: &nbsp  <a ng-href="tel: 214-418-7562 ">214-418-7562</a></b></font></font></center>
+					
+			<div class="row b_color">
+			<center>			
+				<table>
+					<tbody>	
+					
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="SafCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Facility Safety & Transportation</font></b></center>
+			</div>
+			
+			<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Prashant Gajera : &nbsp  <a ng-href="tel: 469-531-0480 ">469-531-0480</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Ghanshyam M. Kakadia: &nbsp  <a ng-href="tel: 469-867-5108 ">469-867-5108</a></b></font></font></center>
+			<!--<center><font size=1><b></b><font size=1 color="#0095bd"><b> &nbsp  <a ng-href="tel: {{}} "></a></b></font></font></center>
+			-->
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>					
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+	
+	
+	<div class="card"  ng-controller="CoCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Food & Service</font></b></center>
+			</div>
+			
+			<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Jayesh Babariya : &nbsp  <a ng-href="tel: 973-489-8422 ">973-489-8422</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Rita Sutaria: &nbsp  <a ng-href="tel: 972-814-3618 ">972-814-3618</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Hitesh Gondaliya: &nbsp  <a ng-href="tel: 972-965-6344 ">972-965-6344</a></b></font></font></center>
+				
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                   	   <tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<!--<div class="card"  ng-controller="GenCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>General Coordinator</font></b></center>
+			</div>
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                   		<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>-->
+		
+		<div class="card"  ng-controller="HealthCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Health & Emergency</font></b></center>
+			</div>
+			<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Dr. Dhaval Satani : &nbsp  <a ng-href="tel: 817-733-7907 ">817-733-7907</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Dr.Rajiv Amipara: &nbsp  <a ng-href="tel: 551-208-7938 ">551-208-7938</a></b></font></font></center>
+					
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                    	<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="HosCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Hospitality & Guest Services</font></b></center>
+			</div>
+			 
+			<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Dhvanish Italia : &nbsp  <a ng-href="tel: 909-643-4634 ">909-643-4634</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Mukesh K Babaria: &nbsp  <a ng-href="tel: 817-715-0161 ">817-715-0161</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Manoj Sutaria: &nbsp  <a ng-href="tel: 214-5643697 ">214 5643697</a></b></font></font></center>
+			
+			
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                   	<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="KidsCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Kid's Program/Women</font></b></center>
+			</div>
+			
+			<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Kiran Patel : &nbsp  <a ng-href="tel: 972-697-9575 ">972-697-9575</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Avani Kakadia: &nbsp  <a ng-href="tel: 469-471-4427 ">469-471-4427</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Kavita Sutaria: &nbsp  <a ng-href="tel: 972-814-3674 ">972-814-3674</a></b></font></font></center>
+			
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+					
+                    	<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="OutCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Outing Event</font></b></center>
+			</div>
+				
+				<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Kiran Patel : &nbsp  <a ng-href="tel: 972-697-9575 ">972-697-9575</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Kavita Sutaria : &nbsp  <a ng-href="tel: 972-814-3674 ">972-814-3674</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Avani Kakadia : &nbsp  <a ng-href="tel: 469-471-4427 ">469-471-4427</a></b></font></font></center>
+			
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                   	<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol" ><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="ProgCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Program Development & Entertainmnent</font></b></center>
+			</div>
+				<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Kavita Sutaria : &nbsp  <a ng-href="tel: 972-814-3674 ">973-489-8422</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Piyush Ghelani: &nbsp  <a ng-href="tel: 469-693-2796 ">469-693-2796</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Kiran Patel: &nbsp  <a ng-href="tel: 972-697-9575 ">972-697-9575</a></b></font></font></center>
+			
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                     	<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+	
+		<div class="card"  ng-controller="RelCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Public Relation</font></b></center>
+			</div>
+				
+				<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Jasmat Sutaria : &nbsp  <a ng-href="tel: 469-223-3944 ">469-223-3944</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Sanjay Malani: &nbsp  <a ng-href="tel: 214-686-8185 ">214-686-8185</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Bharat Sutariya: &nbsp  <a ng-href="tel: 214-418-7562 ">214-418-7562</a></b></font></font></center>
+			
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                    	<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+	
+	<div class="card"  ng-controller="LostCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Registration & Lost Found</font></b></center>
+			</div>
+			
+				<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Bharat Sutaria : &nbsp  <a ng-href="tel: 214-418-7562 ">214-418-7562</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Ritesh Sojitra: &nbsp  <a ng-href="tel: 214-499-5988 ">214-499-5988</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Mayur Ranolia: &nbsp  <a ng-href="tel: 214-208-7381 ">214-208-7381</a></b></font></font></center>
+			
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                     	<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="SenCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Senior Citizen</font></b></center>
+			</div>
+				
+<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Ashokbhai Rupani : &nbsp  <a ng-href="tel: 972-805-7530">972-805-7530</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Dhirubhai Sojitra: &nbsp  <a ng-href="tel: 972-814-3618">972-814-3618</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Prakash Viradia: &nbsp  <a ng-href="tel: 972-494-4372 ">972-494-4372</a></b></font></font></center>
+					
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+					
+                    	<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="SponserCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Sponsorship, Advertisement & Fund Raisin</font></b></center>
+			</div>
+			 
+			<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>DJ Babaria : &nbsp  <a ng-href="tel: 972-342-4700 ">972-342-4700</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Jasmat Sutaria: &nbsp  <a ng-href="tel: 469-223-3944 ">469-223-3944</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Bharat Gajera: &nbsp  <a ng-href="tel: 214-805-5812 ">214-805-5812</a></b></font></font></center>
+			
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+					
+                    	<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		<div class="card"  ng-controller="TransCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Transportation</font></b></center>
+			</div>
+			<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Ghanshyam M. Kakadia : &nbsp  <a ng-href="tel: 469-583-1682 ">469-583-1682</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Prashant Gajera: &nbsp  <a ng-href="tel: 972-896-2299 ">972-896-2299</a></b></font></font></center>
+				
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+					
+                    	<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		
+		<div class="card"  ng-controller="YouthCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Youth Forum</font></b></center>
+			</div>
+			  <center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Nilam Gajera : &nbsp  <a ng-href="tel: 469-432-2510 ">9469-432-2510</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Frank Patel: &nbsp  <a ng-href="tel: 972-804-6950 ">972-804-6950</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Khushi Sutaria: &nbsp  <a ng-href="tel: 214-455-3482 ">214-455-3482</a></b></font></font></center>
+			
+				
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                  	<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+	
+	<div class="card"  ng-controller="PhotoCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>A/V & Photography</font></b></center>
+			</div>
+			<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Prashant Gajera : &nbsp  <a ng-href="tel: 972-896-2299 ">972-896-2299</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Rushang Dhorajia : &nbsp  <a ng-href="tel: 972-345-8499 ">972-345-8499</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Ghanshyam Babaria : &nbsp  <a ng-href="tel: 817-481-1202 ">817-481-1202</a></b></font></font></center>
+						
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+                     				
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+	
+	<div class="card"  ng-controller="BudgetCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Budget & Finance</font></b></center>
+			</div>
+			<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Sanjay Malani : &nbsp  <a ng-href="tel: 214-686-8185 ">214-686-8185</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Jasmat Sutaria : &nbsp  <a ng-href="tel: 469-223-3944 ">469-223-3944</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 2: </b><font size=1 color="#0095bd"><b>Ashwin Babaria : &nbsp  <a ng-href="tel: 972-965-6344 ">972-965-6344</a></b></font></font></center>
+			
+	
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>
+                    				
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+	
+	<div class="card"  ng-controller="WomenCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Women Forum</font></b></center>
+			</div>
+			<center><font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b>Kavita Sutaria : &nbsp  <a ng-href="tel: 972-814-3674 ">972-814-3674</a></b></font></font></center>
+			<center><font size=1><b>Co-Chair 1: </b><font size=1 color="#0095bd"><b>Hansa Gadhia : &nbsp  <a ng-href="tel: 512-363-6922 ">512-363-6922</a></b></font></font></center>
+			
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>
+		<!--
+			<div class="card"  ng-controller="StandCtrl">
+			<div class="item item-text-wrap mayu">
+				<center><b><font color="red" size=2>Stand By</font></b></center>
+			</div>
+			<font size=1><b>Chair Person: </b><font size=1 color="#0095bd"><b></b></font></font>			
+					
+			<div class="row b_color">
+			<center>
+				<table>
+					<tbody>	
+						<tr>
+							<td><font color="red" size=1>Name</font></td>
+							<td><font color="red" size=1>Phone</font></td>
+						</tr>
+						<tr ng-repeat="x in names">
+							<td class="ad_vol"><font color="#0095bd" size=1><b> {{ x.Name }}</b></font></td>
+							<td ><font size=1><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></font></td>							
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			</div>
+		</div>-->
+	<br/></br/>
+	
+	
+	
+	
+	
+	
+	
+	</div>
+  </ion-content>
+</ion-view>

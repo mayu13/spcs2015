@@ -1,0 +1,36 @@
+<ion-view title="Activity">
+<ion-content class="padding">	
+ <div ng-app="myApp" ng-controller="DashCtrl">
+<div>
+	<div class="list">
+		<a class="item item-icon-left" href="#tab/1act_perot">
+			<i class="icon ion-happy"></i>
+				[1st Grade - 5th Grade]
+		</a>
+		<a class="item item-icon-left" href="#tab/2act_park">
+			<i class="icon ion-ios-color-filter"></i>
+				[6th Grade - 12th Grade]
+		<a class="item item-icon-left" href="#tab/3act_group">
+			<i class="icon ion-person-stalker"></i>
+				[College]
+		</a>
+		<a class="item item-icon-left" href="#tab/4act_seniour">
+			<i class="icon ion-ios-eye"></i>
+				[Seniors 55+]
+		</a>
+	</div>
+	
+	
+
+		<div class="row table_title">			
+				<div class="col col-50"><center><b>Event Name</b></center></div>
+				<div class="col col-50"><center><b>Price</b></center></div>		
+		</div>				
+		<div class="row sch" ng-repeat="x in names">
+			<div class="col col-50"><center>{{ x.Activity }}</center></div>
+			<div class="col col-50"><center>{{ x.Event }}</center></div>				
+		</div>		
+		
+</div>
+</ion-content>
+</ion-view>

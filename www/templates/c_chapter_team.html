@@ -1,0 +1,29 @@
+<ion-view title="Chapters Coordinators">
+<ion-content class="padding">
+   <div ng-app="myApp" ng-controller="ChaptersCtrl">
+	
+
+	<table>
+	<tbody >
+		<tr>			
+			<td ><h4><font color="#0095bd" size=2><b>Name</b></font></h4></td>				
+			
+			<td ><h4><font color="#0095bd" size=2><b>Phone</b></font></h4></td>
+			<td ><h4><font color="#0095bd" size=2><b>City</b></font></h4></td>
+		</tr>
+	
+		
+		<tr ng-repeat="x in names" >			
+			<td  class="advisory">{{ x.Name }}</td>
+            <td  class="advisory"><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></td>		
+			<td  class="advisory">{{ x.City }}</td>  
+			
+		</tr>
+		
+  </tbody>
+</table>
+
+</div>
+
+  </ion-content>
+</ion-view>

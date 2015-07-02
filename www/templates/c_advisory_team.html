@@ -1,0 +1,22 @@
+<ion-view title="Advisory Committee">
+<ion-content class="padding">
+     <div ng-app="myApp" ng-controller="AdvisoryCtrl">
+	 <center>
+	<table>
+	
+	<tbody>
+		<tr>
+			<td class="advisory_head"><h4><b><font color="#0095bd">Name</font></b></h4></td>
+			<td class="advisory_head"><h4><b><font color="#0095bd">Phone</font></b></h4></td>
+		</tr>
+		<tr ng-repeat="x in names">
+			<td class="advisory"> {{ x.Name }}</td>
+			<!--<td class="advisory"> <a ng-href="mailto: {{x.Email}} ">{{ x.Email }}</a></td>-->
+			<td><a ng-href="tel: {{x.Phone}} ">{{ x.Phone }}</a></td>
+		</tr>
+  </tbody>
+    </table>
+	</center>
+</div>
+  </ion-content>
+</ion-view>
